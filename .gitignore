@@ -2,3 +2,4 @@ venv/
 .env
 proxies.txt
 .idea/
+**/__pycache__/
