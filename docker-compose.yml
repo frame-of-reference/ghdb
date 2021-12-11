@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:13
+
+  crawler:
+    image: python:3.10.1-alpine3.15
+# TODO...
