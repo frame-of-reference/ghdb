@@ -15,7 +15,7 @@
   </a>
 
   <p align="center">
-    Analyse Udemy Courses
+    Collect GHDB search results
     <br />
     <a href="https://github.com/frame-of-reference/ghdb"><strong>Explore the docs »</strong></a>
     <br />
