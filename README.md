@@ -1,4 +1,5 @@
 <div id="top"></div>
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -9,21 +10,21 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/frame-of-reference/u-serp">
-    <img src="./docs/logo.svg" alt="u-serp logo" height="40" />
+  <a href="https://github.com/frame-of-reference/ghdb">
+    <img src="./docs/logo.svg" alt="ghdb logo" height="40" />
   </a>
 
   <p align="center">
     Analyse Udemy Courses
     <br />
-    <a href="https://github.com/frame-of-reference/u-serp"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/frame-of-reference/ghdb"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/frame-of-reference/u-serp">View Demo</a>
+    <a href="https://github.com/frame-of-reference/ghdb">View Demo</a>
     ·
-    <a href="https://github.com/frame-of-reference/u-serp/issues">Report Bug</a>
+    <a href="https://github.com/frame-of-reference/ghdb/issues">Report Bug</a>
     ·
-    <a href="https://github.com/frame-of-reference/u-serp/issues">Request Feature</a>
+    <a href="https://github.com/frame-of-reference/ghdb/issues">Request Feature</a>
   </p>
 </div>
 
@@ -53,13 +54,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/frame-of-reference/u-serp.svg?style=for-the-badge
-[contributors-url]: https://github.com/frame-of-reference/u-serp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/frame-of-reference/u-serp.svg?style=for-the-badge
-[forks-url]: https://github.com/frame-of-reference/u-serp/network/members
-[stars-shield]: https://img.shields.io/github/stars/frame-of-reference/u-serp.svg?style=for-the-badge
-[stars-url]: https://github.com/frame-of-reference/u-serp/stargazers
-[issues-shield]: https://img.shields.io/github/issues/frame-of-reference/u-serp.svg?style=for-the-badge
-[issues-url]: https://github.com/frame-of-reference/u-serp/issues
-[license-shield]: https://img.shields.io/github/license/frame-of-reference/u-serp.svg?style=for-the-badge
-[license-url]: https://github.com/frame-of-reference/u-serp/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/frame-of-reference/ghdb.svg?style=for-the-badge
+[contributors-url]: https://github.com/frame-of-reference/ghdb/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/frame-of-reference/ghdb.svg?style=for-the-badge
+[forks-url]: https://github.com/frame-of-reference/ghdb/network/members
+[stars-shield]: https://img.shields.io/github/stars/frame-of-reference/ghdb.svg?style=for-the-badge
+[stars-url]: https://github.com/frame-of-reference/ghdb/stargazers
+[issues-shield]: https://img.shields.io/github/issues/frame-of-reference/ghdb.svg?style=for-the-badge
+[issues-url]: https://github.com/frame-of-reference/ghdb/issues
+[license-shield]: https://img.shields.io/github/license/frame-of-reference/ghdb.svg?style=for-the-badge
+[license-url]: https://github.com/frame-of-reference/ghdb/blob/master/LICENSE.txt
