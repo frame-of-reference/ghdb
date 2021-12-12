@@ -1,5 +1,5 @@
 venv/
 .env
-proxies.txt
+crawler/proxies.txt
 .idea/
 **/__pycache__/

@@ -1,8 +1,26 @@
 version: '3.7'
 services:
   db:
-    image: postgres:13
+    image: postgres:14.1
+    volumes:
+          - app-db-data:/var/lib/postgresql/data/pgdata
+    env_file:
+      - .env
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
 
   crawler:
-    image: python:3.10.1-alpine3.15
-# TODO...
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - CRAWLER_NAME=${CRAWLER_NAME}
+      - CRAWLER_ENV=${CRAWER_ENV}
+    build:
+      context: crawler/
+      dockerfile: crawler.Dockerfile
+
+
+volumes:
+  app-db-data:

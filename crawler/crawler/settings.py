@@ -11,7 +11,7 @@ NEWSPIDER_MODULE = 'crawler.spiders'
 
 #USER_AGENT = 'crawler (+http://www.yourdomain.com)'
 
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 #CONCURRENT_REQUESTS = 32
 
