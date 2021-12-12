@@ -30,6 +30,7 @@ python-dateutil==2.8.2
 pytz==2021.3
 queuelib==1.6.2
 Scrapy==2.5.1
+scrapy-splash==0.8.0
 service-identity==21.1.0
 six==1.16.0
 SQLAlchemy==1.4.28
