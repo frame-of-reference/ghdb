@@ -8,7 +8,7 @@ import scrapy
 import numpy as np
 
 from crawler.utils.generators import GoogleHackingQueries
-
+from crawler.crud import ghdb_categories
 
 class GhdbSpider(scrapy.Spider):
 	"""
@@ -35,6 +35,7 @@ class GhdbSpider(scrapy.Spider):
 
 		all_categories = []
 		all_results = []
+
 		for result in results:
 			ghdb_result = {
 				"id": result.get('id'),
@@ -62,3 +63,5 @@ class GhdbSpider(scrapy.Spider):
 		all_categories = []
 		for category in categories:
 			all_categories.append(ast.literal_eval(category))
+
+		print(all_categories)

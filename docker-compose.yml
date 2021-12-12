@@ -10,6 +10,7 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
 
   crawler:
+    tty: true  # TODO: finish setting this up
     depends_on:
       - db
     env_file:
