@@ -1,10 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from urllib.request import Request, urlopen
-from urllib.parse import urlencode
 from typing import Optional
-import json
-import time
+from urllib.parse import urlencode
+
 
 class GoogleHackingQueries(object):
     """Generate URLs for GHDB API
@@ -62,37 +60,13 @@ class GoogleHackingQueries(object):
         '_': 1639249970926
     }
 
-    is_requesting = False
-
-    def __init__(self, results_count: Optional[int] = 1):
-        self.results_count = results_count
-        self.query_params['length'] = self.results_count
-        self.results_limit = self.results_count
-
-        if results_count == 1:
-            self.results_limit = self._get_live_count()
-            self.query_params['length'] = self.results_limit
-        self.is_requesting = False
-
-    def _get_live_count(self):
-        httprequest = Request(self.__str__(), headers=self.headers)
-        self.is_requesting = True
-
-        with urlopen(httprequest) as response:
-            resp = response.read().decode()
-            json_resp = json.loads(resp)
-            return int(json_resp.get('totalRecords', self.results_limit))
-
-    def url_string(self):
-        while self.is_requesting:
-            time.sleep(1)
+    def __str__(self):
         return self.url + urlencode(self.query_params)
 
-    def __str__(self):
-        self.url = self.url + urlencode(self.query_params)
-        return self.url
+    def get_url(self, results_count: Optional[int] = 1):
+        params = self.query_params
+        params['length'] = results_count
+        return self.url + urlencode(params)
 
     def __repr__(self):
-        return f'GoogleHackingQueries(results_count={self.results_count})'
-
-
+        return f'GoogleHackingQueries(results_count={self.query_params.get("length")})'

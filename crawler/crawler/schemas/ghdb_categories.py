@@ -9,7 +9,7 @@ from pydantic import BaseModel
 class GhdbCategoriesBase(BaseModel):
     title: str
     description: str
-    last_update: datetime.datetime.utcnow
+    last_update: datetime.datetime
     results_count: int
 
 
@@ -18,13 +18,13 @@ class GhdbCategoriesCreate(GhdbCategoriesBase):
     id: int
     title: str
     description: str
-    last_update: datetime.datetime.utcnow
+    last_update: datetime.datetime
     results_count: int
 
 
 # Properties to receive on GhdbCategories update
 class GhdbCategoriesUpdate(GhdbCategoriesBase):
-    last_update: datetime.datetime.utcnow
+    last_update: datetime.datetime
     results_count: int
 
 
@@ -33,7 +33,7 @@ class GhdbCategoriesInDBBase(GhdbCategoriesBase):
     id: int
     title: str
     description: str
-    last_update: datetime.datetime.utcnow
+    last_update: datetime.datetime
     results_count: int
 
     class Config:
