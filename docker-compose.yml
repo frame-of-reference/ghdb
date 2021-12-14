@@ -16,7 +16,6 @@ services:
     env_file:
       - .env
     environment:
-      - CRAWLER_NAME=${CRAWLER_NAME}
       - CRAWLER_ENV=${CRAWER_ENV}
     build:
       context: crawler/
