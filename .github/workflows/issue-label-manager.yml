@@ -1,4 +1,3 @@
-# https://github.com/lannonbr/issue-label-manager-action
 on: issues
   workflow_dispatch:
 name: Create Default Labels
@@ -12,4 +11,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
-          delete: true # will delete any labels that aren't in the .github/labels.json
+          delete: true
