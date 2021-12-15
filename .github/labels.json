@@ -1,0 +1,20 @@
+[
+  {"name":  "repo", "color":  "100217", "description":  "Changes to root files in repo"},
+  {"name":  "crawler", "color":  "568EA3", "description":  "Changes to crawler in repo"},
+  {"name":  "devops", "color":  "100217", "description":  "Changes to workflow"},
+  {"name":  "database", "color":  "100217", "description":  "Changes to root files on repo"},
+
+  {"name":  "Type: Enhancement", "color":  "247BA0", "description":  "Enhancement to existing codebase/docs"},
+  {"name":  "Type: Feature", "color":  "273AE6", "description":  "New feature or feature request"},
+  {"name":  "Type: Bug", "color":  "BA2B39", "description":  "Something isn't working"},
+  {"name":  "Type: Question", "color":  "058ED9", "description":  "Any and all questions"},
+
+  {"name":  "Status: Abandoned", "color":  "363635", "description":  ""},
+  {"name":  "Status: In Progress", "color":  "f4f8f3", "description":  ""},
+  {"name":  "Status: Completed", "color":  "1D960F", "description":  ""},
+
+  {"name":  "Priority: High", "color":  "EC4E20", "description":  "High priority issue"},
+  {"name":  "Priority: Medium", "color":  "F0C808", "description":  "Medium priority issue"},
+  {"name":  "Priority: Low", "color":  "A4DB23", "description":  "Low priority issue"},
+  {"name":  "Priority: Critical", "color":  "BA2B39", "description":  "Critical issue!"}
+]
