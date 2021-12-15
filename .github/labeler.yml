@@ -1,4 +1,7 @@
 repo: '*'
-crawler: 'crawler/crawler/**/*'
-database: 'crawler/alembic/**/*'
-devops: '.github/**/*'
+crawler:
+- 'crawler/crawler/**/*'
+database:
+- 'crawler/alembic/**/*'
+devops:
+- '.github/**/*'
