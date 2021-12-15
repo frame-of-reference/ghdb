@@ -27,5 +27,5 @@ jobs:
           script: |
             cd Projects/ghdb/
             git pull
-            bash ./scripts/autostart.sh
+            bash ./scripts/init_crawler.sh
             echo "[SUCCESS] Deployed GHDB!"
