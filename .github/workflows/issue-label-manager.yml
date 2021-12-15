@@ -1,0 +1,15 @@
+# https://github.com/lannonbr/issue-label-manager-action
+on: issues
+  workflow_dispatch:
+name: Create Default Labels
+jobs:
+  labels:
+    name: DefaultLabelsActions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1.0.0
+      - uses: lannonbr/issue-label-manager-action@3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          delete: true # will delete any labels that aren't in the .github/labels.json
