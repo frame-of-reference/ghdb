@@ -1,8 +1,7 @@
-# Add 'repo' label to any root file changes
 repo: '*'
-# Add 'crawler' to any changes within 'crawler/crawler/' folder or any subfolders
-crawler: 'crawler/crawler/**/*'
-# Add 'database' to any changes within 'alembic/' folder or any subfolders
-database: 'alembic/**/*'
-# Add 'devops' to any changes within '.github/' folder or any subfolders
-devops: '.github/**/*'
+crawler:
+- 'crawler/crawler/**/*'
+database:
+- 'crawler/alembic/**/*'
+devops:
+- '.github/**/*'
