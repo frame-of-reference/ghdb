@@ -1,5 +1,4 @@
 on: issues
-  workflow_dispatch:
 name: Create Default Labels
 jobs:
   labels:
